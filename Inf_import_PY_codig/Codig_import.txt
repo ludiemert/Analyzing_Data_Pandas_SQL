@@ -1,0 +1,206 @@
+
+1. Funções embutidas do Python
+Essas funções vêm com o Python e não precisam de importação. Algumas das mais úteis incluem:
+
+ _______________________________________________________________________
+Manipulação de Dados
+len(): Retorna o comprimento de uma sequência ou coleção.
+
+python
+Copiar código
+lista = [1, 2, 3]
+print(len(lista))  # Saída: 3
+
+_______________________________________________________________________
+
+type(): Retorna o tipo de uma variável.
+
+python
+Copiar código
+print(type(42))  # Saída: <class 'int'>
+
+
+_______________________________________________________________________
+input(): Recebe uma entrada do usuário como string.
+
+python
+Copiar código
+nome = input("Qual é o seu nome? ")
+print(f"Olá, {nome}!")
+
+
+_______________________________________________________________________
+
+Funções Matemáticas
+
+
+round(): Arredonda números.
+
+python
+Copiar código
+print(round(3.14159, 2))  # Saída: 3.14
+
+
+ _______________________________________________________________________
+
+abs(): Retorna o valor absoluto de um número.
+
+python
+Copiar código
+print(abs(-10))  # Saída: 10
+
+ _______________________________________________________________________
+
+sum(): Retorna a soma de elementos em uma coleção.
+
+python
+Copiar código
+print(sum([1, 2, 3]))  # Saída: 6
+
+ _______________________________________________________________________
+
+2. Funções para Estruturas de Dados
+
+map(): Aplica uma função a todos os itens de uma coleção.
+
+python
+Copiar código
+numeros = [1, 2, 3]
+quadrados = list(map(lambda x: x**2, numeros))
+print(quadrados)  # Saída: [1, 4, 9]
+
+ _______________________________________________________________________
+
+filter(): Filtra elementos com base em uma condição.
+
+python
+Copiar código
+numeros = [1, 2, 3, 4]
+pares = list(filter(lambda x: x % 2 == 0, numeros))
+print(pares)  # Saída: [2, 4]
+
+ _______________________________________________________________________
+
+zip(): Combina duas ou mais listas em pares.
+
+python
+Copiar código
+nomes = ["Ana", "Bruno"]
+idades = [25, 30]
+combinados = list(zip(nomes, idades))
+print(combinados)  # Saída: [("Ana", 25), ("Bruno", 30)]
+
+ _______________________________________________________________________
+
+3. Funções para Trabalhar com Arquivos
+
+
+open(): Abre arquivos para leitura/escrita.
+
+python
+Copiar código
+with open("arquivo.txt", "r") as f:
+    conteudo = f.read()
+    print(conteudo)
+
+
+ _______________________________________________________________________
+
+read() e write(): Lê e escreve em arquivos.
+
+python
+Copiar código
+with open("saida.txt", "w") as f:
+    f.write("Olá, Mundo!")
+
+
+ _______________________________________________________________________
+
+4. Módulos Populares
+
+Você também deve aprender funções e métodos disponíveis em bibliotecas comuns:
+
+random
+random.randint(a, b): Gera um número aleatório entre a e b.
+
+python
+Copiar código
+import random
+print(random.randint(1, 10))  # Saída: Número entre 1 e 10
+
+
+ _______________________________________________________________________
+
+random.choice(seq): Retorna um elemento aleatório de uma sequência.
+
+python
+Copiar código
+frutas = ["maçã", "banana", "uva"]
+print(random.choice(frutas))  # Saída: uma fruta aleatória
+
+
+ _______________________________________________________________________
+
+math
+math.sqrt(): Retorna a raiz quadrada.
+
+python
+Copiar código
+import math
+print(math.sqrt(16))  # Saída: 4.0
+
+
+ _______________________________________________________________________
+
+math.pow(): Calcula a potência.
+
+python
+Copiar código
+print(math.pow(2, 3))  # Saída: 8.0
+
+ _______________________________________________________________________
+
+5. Métodos de String
+
+str.lower() / str.upper(): Converte texto para minúsculas/maiúsculas.
+
+python
+Copiar código
+texto = "Python"
+print(texto.lower())  # Saída: python
+print(texto.upper())  # Saída: PYTHON
+
+
+ _______________________________________________________________________
+ 
+
+str.split(): Divide uma string em uma lista.
+
+python
+Copiar código
+frase = "Olá Mundo"
+print(frase.split())  # Saída: ['Olá', 'Mundo']
+
+ _______________________________________________________________________
+
+str.join(): Junta elementos de uma lista em uma string.
+
+python
+Copiar código
+lista = ["Olá", "Mundo"]
+print(" ".join(lista))  # Saída: Olá Mundo
+
+ _______________________________________________________________________
+
+6. Tratamento de Exceções Avançado
+
+finally: Garante a execução de código, independentemente de erros.
+python
+Copiar código
+try:
+    num = int(input("Digite um número: "))
+    resultado = 10 / num
+except ZeroDivisionError:
+    print("Erro: divisão por zero!")
+finally:
+    print("Operação concluída.")  # Sempre será executado

@@ -1,0 +1,20 @@
+objeto
+
+
+Atributos = caracteristicas
+informacoes que meu codig vai precisar para fazer alguma coisa ex variaveis, inf numericas
+
+
+
+Acoes = methodos 
+- sao pontos que acessam methodos ou acessa as variaveis
+
+
+
+Vamos estudar 
+- nos criamos nossos tipos de dados - as classes
+
+exemplo o tipo de dado sera o zumbi
+
+- O. O vem para nos ajudar a reutilizar o cod de uma forma melhor
+- reutilizar cod e utilizar de uma forma melhor

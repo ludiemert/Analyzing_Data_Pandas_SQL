@@ -1,0 +1,32 @@
+Diferença entre Métodos e Funções
+
+Funções:
+
+Definição: Uma função é um bloco de código independente que pode ser chamado para realizar uma tarefa específica.
+Uso Geral: As funções podem ser aplicadas a diversos tipos de objetos ou valores.
+Exemplo:
+python
+Copiar código
+def soma(a, b):
+    return a + b
+
+print(soma(2, 3))  # Saída: 5
+
+ _______________________________________________________________________
+Métodos:
+
+Definição: Um método é uma função associada a um objeto específico. Ele "pertence" a uma classe ou tipo.
+Uso Geral: Métodos geralmente modificam ou interagem com os dados do próprio objeto.
+Exemplo:
+python
+Copiar código
+texto = "olá mundo"
+print(texto.upper())  # Saída: OLÁ MUNDO
+O .upper() é um método da classe str, aplicado ao objeto texto.
+
+ _______________________________________________________________________
+ 
+Resumo prático:
+
+Uma função é chamada diretamente e pode atuar sobre vários tipos de dados.
+Um método é chamado por um objeto (e muitas vezes age sobre o próprio objeto).

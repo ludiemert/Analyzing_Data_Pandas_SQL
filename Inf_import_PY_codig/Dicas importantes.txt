@@ -1,0 +1,223 @@
+Dicas importantes:
+
+String
+para a string 'Hello World'
+Podemos usar um : para executar corte que pega tudo até um ponto designado. Por
+exemplo:
+# Retorna todos elementos a partir do elemento de indice 1
+s[1:]
+'ello World'
+
+# Retorna tudo até o elemento de índice 3
+s[:3]
+'Hel'
+
+Observe o corte acima. Aqui, estamos dizendo ao Python que pegue tudo de 0 a 3. Não
+inclui o 3º índice. Você notará muito isso em Python, onde as declarações e geralmente são
+no contexto "até, mas não incluindo".
+# Tudo
+s[:]
+'Hello World'
+
+Também podemos usar indexação negativa para retroceder.
+# Última letra (um índice antes do 0, então ele começa da parte de trás)
+s[-1]
+'d'
+
+# Pega tudo, menos a última letra
+s[:-1]
+'Hello Worl'
+
+# Pega tudo, de 1 em 1
+s[::1]
+'Hello World'
+
+# Pega tudo, mas os espaçamentos são de 2 em 2
+s[::2]
+'HloWrd'
+
+# Pega tudo, mas com passos negativos, de trás para frente.
+s[::-1]
+'dlroW olleH'
+
+
+Algo que podemos fazer é concatenar strings!
+# Concatenar as strings
+s + ' concatenate me!'
+'Hello World concatenate me!'
+
+Podemos usar o símbolo de multiplicação para criar repetições!
+letter = 'z'
+letter*10
+'zzzzzzzzzz'
+
+
+Métodos embutidos em strings
+
+# Coloca toda string em caixa alta
+s.upper()
+'HELLO WORLD CONCATENATE ME!'
+
+# Caixa baixa
+s.lower()
+
+
+# Divide uma string nos espaços em branco (este é o padrão)
+s.split()
+['Hello', 'World', 'concatenate', 'me!']
+
+# Divide em um elemento específico (não inclui o elemento que foi dividido)
+s.split('W')
+['Hello ', 'orld concatenate me!']
+
+
+Podemos usar o método .format() para adicionar objetos formatados a instruções de
+impressões.
+'Insert another string with curly brackets: {}'.format('The inserted string')
+'Insert another string with curly brackets: The inserted string'
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Métodos
+Os métodos estão na forma:
+object.method (arg1, arg2, etc ...)
+
+# Cria uma simples lista
+l = [1,2,3,4,5]
+
+Os métodos para uma lista são:
+append
+count
+extend
+insert
+pop
+remove
+reverse
+sort
+
+append() nos permite adicionar elementos ao final de uma lista:
+l.append(6)
+l
+[1, 2, 3, 4, 5, 6]
+
+
+o count()? O método count() irá contar o número de ocorrências de um
+elemento em uma lista.
+# Conta quantas vezes o 2 aparece na lista
+l.count(2)
+1
+
+Shift + Tab no Jupyter Notebook para obter mais ajuda sobre o
+método. Em geral, Python lhe permite usar a função help():
+help(l.count)
+Help on built-in function count:
+count(...)
+L.count(value) -> integer -- return number of occurrences of value
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Listas
+Ao contrário
+das strings, eles são mutáveis, o que significa que os elementos dentro de uma lista podem
+ser alterados!
+
+As listas são construídas com colchetes [] e vírgulas que separam cada elemento da lista.
+
+
+# Atribui uma lista a uma variável chamada my_list
+my_list = [1,2,3]
+
+
+Acabamos de criar uma lista de números inteiros, mas as listas podem realmente armazenar
+diferentes tipos de objeto. Por exemplo:
+
+my_list = ['A string',23,100.232,'o']
+Assim como as strings, a função len() irá dizer-lhe quantos itens estão na sequência da lista.
+len(my_list)
+4
+
+
+Indexação e corte
+Indexar e cortar funciona exatamente como em strings. Vamos fazer uma nova lista para nos
+lembrar de como isso funciona:
+
+my_list = ['one','two','three',4,5]
+# Pega o elemento de indice 0
+my_list[0]
+'one'
+
+# Pegue o índice 1 e tudo depois
+my_list[1:]
+['two', 'three', 4, 5]
+
+# Pega tudo até o elemento de índice 3
+my_list[:3]
+['one', 'two', 'three']
+
+
+Nós também podemos usar + para concatenar listas, assim como fizemos por strings.
+my_list + ['new item']
+['one', 'two', 'three', 4, 5, 'new item']
+Nota: Isso realmente não altera a lista original!
+my_list
+['one', 'two', 'three', 4, 5]
+
+Você teria que reatribuir a lista para tornar a mudança permanente.
+# Reassign
+my_list = my_list + ['add new item permanently']
+my_list
+['one', 'two', 'three', 4, 5, 'add new item permanently']
+
+usar o * para um método de duplicação semelhante às strings:
+# Make the list double
+my_list * 2
+['one',
+'two',
+'three',
+4,
+5,
+'add new item permanently',
+'one',
+'two',
+'three',
+4,
+5,
+'add new item permanently']
+
+my_list
+['A string', 23, 100.232, 'o']
+
+Métodos de Lista Básica
+
+# Cria a lista
+l = [1,2,3]
+Use o método append para adicionar permanentemente um item ao final de uma lista:
+# Append
+l.append('append me!')
+# Mostra
+l
+[1, 2, 3, 'append me!']
+
+
+Use pop para "retirar" um item da lista. Por padrão, pop tira o último índice, mas também
+pode especificar qual índice aparecer.
+# Retira o item de índice 0
+l.pop(0)
+1
+# Mostra
+l
+[2, 3, 'append me!']
+
+
+# Atribui o elemento retirado, lembre-se de que o índice padrão é -1
+popped_item = l.pop()
+popped_item
+'append me!'
+# Mostra a lista restante
+l
+[2, 3]
+
+
+o método sort e os métodos reverse para alterar suas listas:
+
+

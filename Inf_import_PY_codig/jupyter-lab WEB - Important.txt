@@ -1,0 +1,11 @@
+para abrir o WEB de projetos =>  jupyter-lab  
+
+PS C:\Users\user\Downloads\Computer_Vision_Py> jupyter-lab 
+[I 2025-04-20 16:40:50.666 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-04-20 16:40:50.679 ServerApp] jupyter_server_terminals | extension was successfully linked.
+
+
+http://localhost:8888/lab
+
+Para interromper a sessao 
+na web => View => shutdown

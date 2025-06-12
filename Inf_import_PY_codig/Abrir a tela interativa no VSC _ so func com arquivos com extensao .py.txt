@@ -1,0 +1,18 @@
+Dicas importantes:
+
+- para abrir a tela interativa no VSC tem que apertar 
+Shift + Enter → Executa a célula no modo interativo
+
+abre a tela do lado para ir testando o codigo
+
+
+no proprio codigo digitar acima da linha que queira executar
+
+# %%
+print("Essa é uma nova célula!")
+
+
+
+
+sempre usar esse codigo para rodar codigo interativo e testar
+# %% 

@@ -1,0 +1,26 @@
+abrir Jupyter Notebook sem instalar anaconda 
+
+
+1. Instalar o Jupyter via pip
+Abra o terminal (Prompt de Comando, PowerShell ou terminal no VSCode) e digite:
+
+pip install notebook
+
+
+
+Esse comando apos ele abre a web => jupyter notebook
+
+
+2 Rodar o Jupyter Notebook
+Depois que a instalação terminar, execute:
+
+jupyter notebook
+
+
+3 Esse comando vai abrir o Jupyter Notebook automaticamente no seu navegador padrão, normalmente na URL:
+
+http://localhost:8888/tree
+
+
+Teste rápido
+Você pode criar um arquivo .ipynb (notebook) novo direto na interface do navegador e começar a programar em Python.

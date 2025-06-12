@@ -1,0 +1,6 @@
+Dicas importantes:
+
+abrir o terminal PowerShell e chegar na pasta e digitar o comando:
+
+(base) PS C:\Users\user\Downloads\Computer_Vision_Py\Projetos\5_Proj_Pedra_Papel_Tesoura> python .\Proj.py
+

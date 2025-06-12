@@ -1,0 +1,7 @@
+Dicas importantes:
+
+
+
+deixar registrado as lib do projetos
+
+pip freeze > requirements.txt
