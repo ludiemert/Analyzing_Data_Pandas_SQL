@@ -1,5 +1,9 @@
 abrir Jupyter Notebook sem instalar anaconda 
 
+O Python Notebook (ou Jupyter Notebook) é uma aplicação web interativa que permite escrever e 
+executar código Python em blocos, 
+além de incluir textos, gráficos e tabelas — ideal para análise de dados,
+
 
 1. Instalar o Jupyter via pip
 Abra o terminal (Prompt de Comando, PowerShell ou terminal no VSCode) e digite:
@@ -9,6 +13,8 @@ pip install notebook
 
 
 Esse comando apos ele abre a web => jupyter notebook
+
+OU python -m notebook
 
 
 2 Rodar o Jupyter Notebook
