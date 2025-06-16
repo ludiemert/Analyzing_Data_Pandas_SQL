@@ -3,3 +3,4 @@ Comandos na tela do Jupyter
 esc + D => deleta celula
 esc => sai no modo de edicao
 enter => para entrar no modo de edicao
+esc + A => adiciona uma linha acima da atual
