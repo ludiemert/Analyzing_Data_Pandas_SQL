@@ -10,11 +10,9 @@ Abra o terminal (Prompt de Comando, PowerShell ou terminal no VSCode) e digite:
 
 pip install notebook
 
-
-
 Esse comando apos ele abre a web => jupyter notebook
 
-OU python -m notebook
+OU python -m notebook (esse func todas as vezes)
 
 
 2 Rodar o Jupyter Notebook
