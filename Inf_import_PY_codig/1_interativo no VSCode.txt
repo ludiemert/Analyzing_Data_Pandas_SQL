@@ -1,0 +1,3 @@
+abrir o interativo para os comandos do SQL
+
+shifit + enter (abre o interativo no VSCode)
