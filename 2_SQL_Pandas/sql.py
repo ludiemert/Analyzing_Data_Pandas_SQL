@@ -20,3 +20,18 @@ df_data.to_sql(
 # exportar os dados para a base de dados
 
 # %%
+# para executar comandos sql preciso criar ponteiros na Base de dados
+# fazer o PY conversar com o BD
+# instanciar a conecxao
+c = conn.cursor()
+
+# %%
+# para passar comandos SQL comando execute
+c.execute("CREATE TABLE products(product_id, product_name, price)")
+conn.commit()
+
+# %%
+# deletar a tabela
+c.execute("DROP TABLE products")
+
+# %%
