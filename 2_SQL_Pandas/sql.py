@@ -35,3 +35,6 @@ conn.commit()
 c.execute("DROP TABLE products")
 
 # %%
+# tipagem no BD cada tipo de BD tem sua tipagem
+c.execute("CREATE TABLE products(product_id, product_name, price)")
+conn.commit()
