@@ -35,6 +35,103 @@ conn.commit()
 c.execute("DROP TABLE products")
 
 # %%
+# deletar a tabela
+c.execute("DROP TABLE data")
+
+# %%
 # tipagem no BD cada tipo de BD tem sua tipagem
-c.execute("CREATE TABLE products(product_id, product_name, price)")
+c.execute(
+    "CREATE TABLE products([product_id] INTEGER PRIMARY KEY, [product_name] TEXT, [price] INTEGER)"
+)
+# conn.commit()
+# a tipagem eh importante pq o BD ja vai alocar as informacoes, ele aloca melhor o BD
+# se nao tipar ele aloca muito espaco, se tipar ele prepara melhor os espacos
+
+# %% INSERT => inserir inf em uma tab ja existente (''') permite que trab em varias linhas
+# inserir dados no PY com PD and SQL
+# passo me tupla separados por , => (1, 'Computer', 800),
+c.execute(
+    """INSERT INTO products(product_id, product_name, price)
+    VALUES
+    (1, 'Computer', 800),
+    (2, 'Printer', 200),
+    (3, 'Table', 300)
+"""
+)
 conn.commit()
+
+# %% # Criar com o PANDAS
+# gerar novamente a tabela de 2 em 2 de tras para frente
+# criar uma nova tabela
+
+df_data2 = df_data.iloc[::-2]  # gerar novamente a tabela de 2 em 2 de tras para frente
+## nao esquecer o conn => conecxao
+
+# %% # inserir valores ja existentes, usando if_exists and append => melhor que insert esse method eh com o PANDAS
+df_data2.to_sql("data", conn, if_exists="append")
+
+# %% # LER INF NA BASE DE DADOS
+# SELECT => selecionar dados de uma base, sempre sera SELECT de colunas, com * eu puxo tudo
+c.execute("SELECT * FROM data")
+c.fetchone()  # mostra uma tupla com uma execucao
+
+# %% # retorna uma lista dentro de uma Tuplas
+c.execute("SELECT * FROM data")
+c.fetchall()
+
+
+# %% # leitura de dados e organizar os dados, nao eh uma boa pratica
+df = pd.DataFrame(c.fetchall())
+
+# %%
+df
+
+# %%
+# pegar as informacoes qdo a coluna 2 for maior que 200
+c.execute("SELECT * FROM data WHERE 2 > 200")
+df = pd.DataFrame(c.fetchall())
+
+
+# %%
+c.execute("SELECT * FROM data WHERE A > 200")
+df = pd.DataFrame(c.fetchall())
+df
+
+# %% # usando a condicional
+# qdo A for + q 200 e B + 100
+c.execute("SELECT * FROM data WHERE A > 200 AND B > 100")
+df = pd.DataFrame(c.fetchall())
+df
+
+# %% # escolher a coluna
+c.execute("SELECT A, B, C FROM data WHERE A > 200 AND B > 100")
+df = pd.DataFrame(c.fetchall())
+df
+
+
+# %%
+# selecionando colunas e condicionais
+# Cria uma variavel query
+query = "SELECT * FROM data"
+df = pd.read_sql(query, con=conn, index_col="index_name")
+df
+
+# %% # FAZER DENTRO DO PANDAS
+# Cria uma variavel query
+query = "SELECT * FROM data"
+# df = pd.read_sql(query, con=conn)
+# desse jeito o indice nao volta certo => df = pd.read_sql(query, con=conn)
+# organizado sem logica adicional
+df = pd.read_sql("SELECT A, B, C FROM data WHERE A > 200 AND B > 100", con=conn)
+
+# %%
+df
+
+
+# %% # ver dados da tabela products
+for row in c.execute("SELECT * FROM products"):
+    print(row)
+
+
+# %%
+# Comandos UPDATE and DELETE, update table product
