@@ -155,10 +155,73 @@ print(df)
 # Comandos UPDATE and DELETE, update table products or table data
 c.execute("UPDATE products SET price = 1200 WHERE product_name = 'Computer'")
 conn.commit()
-
 # %%
 for row in c.execute("SELECT * FROM products"):
     print(row)
 
+# %% UPDATE
+c.execute("UPDATE products SET price = 1100 WHERE product_name = 'Table'")
+conn.commit()
+# %%
+for row in c.execute("SELECT * FROM products"):
+    print(row)
+
+
+# %% REINICIAR A CONEXÃO COM O BANCO DE DADOS
+import sqlite3
+import pandas as pd
+
+# Fecha conexão anterior, se estiver aberta
+try:
+    conn.close()
+except:
+    pass  # ignora erro se já estiver fechada
+
+# %%
+# Reabre conexão com o banco
+conn = sqlite3.connect("web.bd")  # ou o nome correto do seu arquivo .bd
+c = conn.cursor()
+
+# %% VERIFICAR TABELAS EXISTENTES
+c.execute("SELECT name FROM sqlite_master WHERE type='table'")
+print(c.fetchall())
+
+
+# %% le a tabela no DF
+df = pd.read_sql_query("SELECT * FROM products", conn)
+print(df)
+
+# %% UPDATE => duas operacoes, tabela data
+c.execute("UPDATE data SET A=220, B=99 WHERE index_name = 'b'")
+conn.commit()
+
+
+# %%
+df = pd.read_sql_query("SELECT * FROM data", conn)
+print(df)
+
+# %% ve somente essa linha e coluna
+df = pd.read_sql_query("SELECT * FROM data WHERE index_name = 'b'", conn)
+print(df)
+
+
+# %% FECHAR O BD E RENICIA
+# c.close()
+# c = conn.cursor()
+# df = pd.read_sql_query("SELECT * FROM data WHERE index_name = 'b'", conn)
+# print(df)
+
+
+# %% DROP joga fora a tabela ou o bd mas o DELITE deleta uma linha
+# delite joga fora as entradas, as linhas
+
+
+# %% le a tabela no DF
+df = pd.read_sql_query("SELECT * FROM products", conn)
+print(df)
+
+# %% Deletar a linha 1 do product_id
+c.execute("DELETE FROM products WHERE product_name='Computer'")
+conn.commit()
 
 # %%
