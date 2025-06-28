@@ -79,6 +79,10 @@ c.fetchone()  # mostra uma tupla com uma execucao
 c.execute("SELECT * FROM data")
 c.fetchall()
 
+# %% # retorna uma lista dentro de uma Tuplas
+c.execute("SELECT * FROM products")
+print(c.fetchall())
+
 
 # %% # leitura de dados e organizar os dados, nao eh uma boa pratica
 df = pd.DataFrame(c.fetchall())
@@ -127,11 +131,34 @@ df = pd.read_sql("SELECT A, B, C FROM data WHERE A > 200 AND B > 100", con=conn)
 # %%
 df
 
-
 # %% # ver dados da tabela products
+for row in c.execute("SELECT * FROM products"):
+    print(row)
+
+# %% # FAZER DENTRO DO PANDAS
+# Cria uma variavel query
+query = "SELECT * FROM data"
+df = pd.read_sql("SELECT A, B, C FROM data WHERE A > 200 AND B > 100", con=conn)
+# %%
+df
+
+
+# %%
+c.execute("PRAGMA table_info(products)")  # comando para visualizar as colunas da tabela
+print(c.fetchall())
+
+# %% le a tabela no DF
+df = pd.read_sql_query("SELECT * FROM products", conn)
+print(df)
+
+# %% UPDATE => Value
+# Comandos UPDATE and DELETE, update table products or table data
+c.execute("UPDATE products SET price = 1200 WHERE product_name = 'Computer'")
+conn.commit()
+
+# %%
 for row in c.execute("SELECT * FROM products"):
     print(row)
 
 
 # %%
-# Comandos UPDATE and DELETE, update table product
