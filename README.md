@@ -69,15 +69,11 @@ In this course, you will learn:
 🛠️ Technologies
 
 ```bash
-Python
-
-Pandas
-
-SQL
-
-SQLite
-
-Jupyter Notebook
+ - Python
+ - Pandas
+ - SQL
+ - SQLite
+ - Jupyter Notebook
 
 ```
 
@@ -91,7 +87,150 @@ Jupyter Notebook
 pip install -r requirements.txt
 ```
 
-----
+
+
+--------
+
+### img projects:
+
+## Screenshots
+
+Here are some images showing the layout of the application:
+
+________________________________________
+
+<h4 align="center">Chat_friends 🥰 🚀</h4>
+
+<div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="1_Concept_Pd_img_project/5_Dealing_missing_data/1_dealing_missing_data.png" style="width: 90%;" alt="Dealing_missing_data">
+                <p style="margin-top: 5px;">Dealing_missing_data</p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="1_Concept_Pd_img_project/7_concat_merge_join/2_method_concat_axis.png" style="width: 90%;" alt="Method_concat_axis">
+                <p style="margin-top: 5px;">Method_concat_axis</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+
+
+________________________________________
+
+<div align="center">
+    <table>
+        <tr>
+             <td style="width: 50%; text-align: center;">
+                <img src="2_SQL_Pandas_img/10_Codig_Type_BD.png" style="width: 90%;" alt="Codig_Type_BD">
+                <p style="margin-top: 5px;">Codig_Type_BD</p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="2_SQL_Pandas_img/11_Table_Type.png" style="width: 90%;" alt="Table_Type">
+                <p style="margin-top: 5px;">Table_Type</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+
+
+  ________________________________________
+
+  
+<h4 align="center">Chat_friends 🥰 🚀</h4>
+
+<div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="2_SQL_Pandas_img/13_Insert_date_Table.png" style="width: 90%;" alt="Insert_date_Table">
+                <p style="margin-top: 5px;">Insert_date_Table</p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="2_SQL_Pandas_img/15_Filter_conditional_AND.png" style="width: 90%;" alt="Filter_conditional_AND">
+                <p style="margin-top: 5px;">Filter_conditional_AND</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+
+
+________________________________________
+
+<div align="center">
+    <table>
+        <tr>
+             <td style="width: 50%; text-align: center;">
+                <img src="2_SQL_Pandas_img/2_alter_name_index_name.png" style="width: 90%;" alt="Alter_name_index_name">
+                <p style="margin-top: 5px;">Alter_name_index_name</p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="2_SQL_Pandas_img/6_BD_SQlite_memorry_disck_Rigd.png" style="width: 90%;" alt="BD_SQlite_memorry_disck_Rigd">
+                <p style="margin-top: 5px;">BD_SQlite_memorry_disck_Rigd</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+
+
+  ________________________________________
+
+<h4 align="center">Chat_friends 🥰 🚀</h4>
+
+<div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="2_SQL_Pandas/4_Projectos/3_Proj_ GDP_Per_Person_Img/16_grafico_03_Evolução media por regiao.png" style="width: 90%;" alt="grafico_03_Evolução media por regiao">
+                <p style="margin-top: 5px;">grafico_03_Evolução media por regiao</p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="2_SQL_Pandas/4_Projectos/3_Proj_ GDP_Per_Person_Img/19_matplotlib_grafic_estimativ.png" style="width: 90%;" alt="GDP_Per_Person_Img/19_matplotlib_grafic_estimativ">
+                <p style="margin-top: 5px;">GDP_Per_Person_Img/19_matplotlib_grafic_estimativ</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+
+
+________________________________________
+
+<div align="center">
+    <table>
+        <tr>
+             <td style="width: 50%; text-align: center;">
+                <img src="2_SQL_Pandas/4_Projectos/3_Proj_ GDP_Per_Person_Img/24_img_Year_project_new.png" style="width: 90%;" alt="Year_project_new">
+                <p style="margin-top: 5px;">Year_project_new</p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="2_SQL_Pandas/4_Projectos/3_Proj_ GDP_Per_Person_Img/25_img_interative.png" style="width: 90%;" alt="img_interative">
+                <p style="margin-top: 5px;">img_interative</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+
+
+  ----
 
 ### Portugues💌
 
