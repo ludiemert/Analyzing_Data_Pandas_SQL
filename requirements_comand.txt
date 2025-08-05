@@ -1,0 +1,9 @@
+requirements
+
+gerar o requirements.txt
+
+
+para ver os prog instalados
+No VSCODE rodar:
+
+pip freeze > requirements.txt
