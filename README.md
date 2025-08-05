@@ -55,3 +55,30 @@ In this course, you will learn:
 ├── 📄 README.md          # This file
 └── 📄 requirements.txt   # Python packages used
 
+
+```
+
+🛠️ Technologies
+
+```bash
+Python
+
+Pandas
+
+SQL
+
+SQLite
+
+Jupyter Notebook
+
+```
+
+📌 Notes
+
+- This course is a good way to start learning data analysis with Python.
+ - You will learn tools that many companies use today.
+
+💡 Tip: To run the notebooks, install the packages with:
+```bash
+pip install -r requirements.txt
+```
