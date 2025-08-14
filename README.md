@@ -99,7 +99,7 @@ Here are some images showing the layout of the application:
 
 ________________________________________
 
-<h4 align="center">Chat_friends 🥰 🚀</h4>
+<h4 align="center">Analyzing_Data_Pandas_SQL 🥰 🚀</h4>
 
 <div align="center">
     <table>
@@ -144,7 +144,7 @@ ________________________________________
   ________________________________________
 
   
-<h4 align="center">Chat_friends 🥰 🚀</h4>
+<h4 align="center">Analyzing_Data_Pandas_SQL 🥰 🚀</h4>
 
 <div align="center">
     <table>
@@ -188,7 +188,7 @@ ________________________________________
 
   ________________________________________
 
-<h4 align="center">Chat_friends 🥰 🚀</h4>
+<h4 align="center">Analyzing_Data_Pandas_SQL 🥰 🚀</h4>
 
 <div align="center">
     <table>
